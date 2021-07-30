@@ -1,7 +1,7 @@
 .notificationMenu {
 	display: block;
 	position: fixed;
-	right: 0;
+	right: -100%;
 	transform: translate(0, 0);
 	transition: 0.4s;
 	background-color: rgba(208, 223, 240, 0.96);

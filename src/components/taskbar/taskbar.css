@@ -43,3 +43,8 @@
 	float: right;
 	filter: brightness(0%);
 }
+
+.showDesktop {
+	align-self: stretch;
+	border-right: 3px double rgb(119, 102, 102);
+}

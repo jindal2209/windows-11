@@ -11,6 +11,9 @@ function TaskBarIcon(props) {
 
 function Taskbar() {
 	var [startMenuVisible, setStartMenuVisible] = useState(false)
+	var [notificationMenuVisible, setNotificationMenuVisible] = useState(false)
+	var [time, setTime] = useState(new Date())
+
 	function handleStartMenuShow() {
 		if (startMenuVisible) {
 			document.getElementById('startmenu').style.bottom = "-100%"
@@ -22,7 +25,6 @@ function Taskbar() {
 		}
 	}
 
-	var [notificationMenuVisible, setNotificationMenuVisible] = useState(false)
 	function handleSideNotificationShow() {
 		if (notificationMenuVisible) {
 			document.getElementById('notificationMenu').style.right = "-100%"
@@ -41,7 +43,6 @@ function Taskbar() {
 		return z(hr === 0 ? 12 : hr) + ':' + z(date.getMinutes()) + ' ' + (h < 12 ? 'AM' : 'PM');
 	}
 
-	var [time, setTime] = useState(new Date())
 
 	useEffect(() => {
 		setInterval(() => setTime(new Date()), 1000)
@@ -66,7 +67,22 @@ function Taskbar() {
 				</div>
 				<div className='col-3 text-center d-flex justify-content-center align-items-center'>
 					<div className='row' style={{ flex: 1, alignSelf: 'stretch' }}>
-						<div className='col-9 date-time px-1'>
+						<div className='col-1'></div>
+						<div className='col-1'></div>
+						<div className='col-1'></div>
+						<div className='col-1'></div>
+
+						<div className='col-1 date-time px-1'>
+							<img className='notificationBtn' src={process.env.PUBLIC_URL + "/img/icon/ui/arrow.png"} alt="arrow" />
+						</div>
+						<div className='col-1 date-time'>
+							<img className='notificationBtn' src={process.env.PUBLIC_URL + "/img/icon/ui/battery.png"} alt="battery" />
+						</div>
+						<div className='col-1 date-time'>
+							<img className='notificationBtn' src={process.env.PUBLIC_URL + "/img/icon/ui/wifi.png"} alt="wifi" />
+						</div>
+						<div className='col-1 date-time'>
+							<img className='notificationBtn' src={process.env.PUBLIC_URL + "/img/icon/ui/audio.png"} alt="audio" />
 						</div>
 						<div className='col-2 date-time'>
 							{formatHHMM(time)}
@@ -76,6 +92,8 @@ function Taskbar() {
 						<div className='col-1 date-time' onClick={() => handleSideNotificationShow()}>
 							<img className='notificationBtn' src={process.env.PUBLIC_URL + "/img/icon/ui/sidepane.png"} alt="start" />
 						</div>
+						<div className='date-time px-1' style={{ paddingRight: '5px', width: 'max-content' }}><span className='showDesktop'></span></div>
+
 					</div>
 				</div>
 			</div>
