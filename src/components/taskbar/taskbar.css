@@ -1,0 +1,45 @@
+.taskbar {
+	height: 5.3%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	bottom: 0;
+	background-color: rgba(196, 219, 248, 0.726);
+	background-image: linear-gradient(to right, rgba(255, 255, 255, 0.60), rgba(165, 199, 241, 0.95), rgba(255, 255, 255,0.60));
+	-webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.taskbar-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 0.55rem;
+	padding-right: 0.55rem;
+}
+
+.taskbar-icon:hover {
+	cursor: pointer;
+	background-color: rgba(218, 228, 240, 0.95);
+}
+
+.date-time {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	align-self: stretch;
+	font-size: x-small;
+}
+
+.date-time:hover {
+	background-color: rgba(201, 214, 233, 0.808);
+	cursor: pointer;
+}
+
+.notificationBtn {
+	height: 16px;
+	float: right;
+	filter: brightness(0%);
+}

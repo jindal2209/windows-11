@@ -1,0 +1,88 @@
+.startmenu {
+	display: block;
+	position: fixed;
+	bottom: -100%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	transition: 0.4s;
+}
+
+.startmenuBottomMiddle, .startmenuMiddle, .startmenuTop {
+	width: 35vw;
+	background-color: rgba(208, 223, 240, 0.95);
+	border: 1px solid transparent;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	padding: 20x;
+	padding-left: 30px;
+	padding-right: 40px;
+	font-size: small;
+	font-weight: 600;
+}
+
+.startmenuBottomMiddle {
+	border-radius: 0;
+}
+
+.startmenuMiddle {
+	border-radius: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.startmenuBottom {
+	width: 35vw;
+	padding: 15px;
+	padding-left: 20px;
+	padding-right: 40px;
+	background-color: rgba(196, 219, 248, 0.90);
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+}
+
+.powerBtn {
+	height: 20px;
+	float: right;
+	filter: brightness(0%);
+}
+
+.userBtn {
+	height: 20px;
+	float: left;
+}
+
+.user {
+	float: left;
+	font-size: small;
+}
+
+.rightBtn {
+	font-weight: 500;
+	float: right;
+	background-color: white;
+	font-size: smaller;
+	cursor: pointer;
+}
+
+.topBar {
+	padding: 30px;
+}
+
+.menuIcon {
+	padding: 10px;
+	font-size: smaller;
+}
+
+.menuIcon:hover {
+	background-color: rgba(218, 228, 240, 0.95);
+	cursor: pointer;
+}
+
+.recommendIcon {
+	padding: 10px;
+	font-size: smaller;
+}
+
+.recommendIcon:hover {
+	cursor: pointer;
+}
