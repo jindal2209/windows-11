@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/windows-11/static/css/main.5ab7c240.chunk.css",
-    "main.js": "/windows-11/static/js/main.a60c8ae4.chunk.js",
-    "main.js.map": "/windows-11/static/js/main.a60c8ae4.chunk.js.map",
+    "main.css": "/windows-11/static/css/main.be435787.chunk.css",
+    "main.js": "/windows-11/static/js/main.dab09a1d.chunk.js",
+    "main.js.map": "/windows-11/static/js/main.dab09a1d.chunk.js.map",
     "runtime-main.js": "/windows-11/static/js/runtime-main.cf21e6e4.js",
     "runtime-main.js.map": "/windows-11/static/js/runtime-main.cf21e6e4.js.map",
     "static/css/2.455652b6.chunk.css": "/windows-11/static/css/2.455652b6.chunk.css",
@@ -12,14 +12,14 @@
     "static/js/3.ba05346c.chunk.js.map": "/windows-11/static/js/3.ba05346c.chunk.js.map",
     "index.html": "/windows-11/index.html",
     "static/css/2.455652b6.chunk.css.map": "/windows-11/static/css/2.455652b6.chunk.css.map",
-    "static/css/main.5ab7c240.chunk.css.map": "/windows-11/static/css/main.5ab7c240.chunk.css.map",
+    "static/css/main.be435787.chunk.css.map": "/windows-11/static/css/main.be435787.chunk.css.map",
     "static/js/2.451d84ba.chunk.js.LICENSE.txt": "/windows-11/static/js/2.451d84ba.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.cf21e6e4.js",
     "static/css/2.455652b6.chunk.css",
     "static/js/2.451d84ba.chunk.js",
-    "static/css/main.5ab7c240.chunk.css",
-    "static/js/main.a60c8ae4.chunk.js"
+    "static/css/main.be435787.chunk.css",
+    "static/js/main.dab09a1d.chunk.js"
   ]
 }
